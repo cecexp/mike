@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" required pattern="[A-Za-zÀ-ÿ\s]+" placeholder="Ana" title="Only letters and spaces are allowed">
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="8 characters at least" title="Must contain at least 8 characters">
+            
+            <p class="create">Create Account</p>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
