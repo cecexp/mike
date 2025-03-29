@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e3f2fd;
@@ -9,13 +8,24 @@ body {
     margin: 0;
 }
 
-.login-container {
+.container {
+    width: 380px;
+    position: relative;
+}
+
+.login-container,
+.register-container {
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
 }
 
 .logo-container {
@@ -74,15 +84,17 @@ button:hover {
     background-color: #1565c0;
 }
 
-.create {
-    color: #0d47a1;
-    text-decoration: none;
-    cursor: pointer;
+.switch-form {
+    margin-top: 15px;
     font-size: 14px;
-    margin-top: 10px;
-    display: inline-block;
 }
 
-.create:hover {
+.switch-form a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-form a:hover {
     color: #1565c0;
 }
